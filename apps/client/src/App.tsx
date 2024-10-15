@@ -9,7 +9,7 @@ function App() {
 
   const checkServerConnection = async () => {
     try {
-      const response = await fetch('/api/v1/test'); 
+      const response = await fetch('/api/v1'); 
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
