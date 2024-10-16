@@ -27,10 +27,16 @@ import { join } from 'path';
 import { HealthModule } from './health/health.module';
 @Module({
   imports: [
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '../..', 'client', 'dist'),
-      exclude: ['/api*'],
-    }),
+    ServeStaticModule.forRoot(
+      {
+        rootPath: join(__dirname, '..', 'public'),
+        serveRoot: '/public/',
+      },
+      {
+        rootPath: join(__dirname, '../..', 'client', 'dist'),
+        exclude: ['/api*'],
+      },
+    ),
     ConfigModule.forRoot({
       isGlobal: true,
     }),

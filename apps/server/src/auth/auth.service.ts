@@ -5,12 +5,12 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Response } from 'express';
 import ms from 'ms';
 import { SoftDeleteModel } from 'soft-delete-plugin-mongoose';
-import { USER_ROLE } from 'src/databases/sample';
-import { RolesService } from 'src/roles/roles.service';
-import { Role, RoleDocument } from 'src/roles/schemas/role.schema';
-import { RegisterUserDto } from 'src/users/dto/create-user.dto';
-import { User, UserDocument } from 'src/users/schemas/user.schema';
-import { IUser } from 'src/users/users.interface';
+import { USER_ROLE } from '../databases/sample';
+import { RolesService } from '../roles/roles.service';
+import { Role, RoleDocument } from '../roles/schemas/role.schema';
+import { RegisterUserDto } from '../users/dto/create-user.dto';
+import { User, UserDocument } from '../users/schemas/user.schema';
+import { IUser } from '../users/users.interface';
 import { UsersService } from '../users/users.service';
 @Injectable()
 export class AuthService {

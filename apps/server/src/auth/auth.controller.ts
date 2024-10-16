@@ -10,10 +10,10 @@ import {
 import { ApiBody, ApiTags } from '@nestjs/swagger';
 import { ThrottlerGuard } from '@nestjs/throttler';
 import { Request, Response } from 'express';
-import { Public, ResponseMessage, UserDecor } from 'src/decorator/customize';
-import { RolesService } from 'src/roles/roles.service';
-import { RegisterUserDto, UserLoginDto } from 'src/users/dto/create-user.dto';
-import { IUser } from 'src/users/users.interface';
+import { Public, ResponseMessage, UserDecor } from '../decorator/customize';
+import { RolesService } from '../roles/roles.service';
+import { RegisterUserDto, UserLoginDto } from '../users/dto/create-user.dto';
+import { IUser } from '../users/users.interface';
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './local-auth.guard';
 

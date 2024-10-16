@@ -13,8 +13,8 @@ import {
   ResponseMessage,
   SkipCheckPermission,
   UserDecor,
-} from 'src/decorator/customize';
-import { IUser } from 'src/users/users.interface';
+} from '../decorator/customize';
+import { IUser } from '../users/users.interface';
 import { CreateSubscriberDto } from './dto/create-subscriber.dto';
 import { UpdateSubscriberDto } from './dto/update-subscriber.dto';
 import { SubscribersService } from './subscribers.service';

@@ -4,7 +4,7 @@ import aqp from 'api-query-params';
 import mongoose from 'mongoose';
 import { Subscriber } from 'rxjs';
 import { SoftDeleteModel } from 'soft-delete-plugin-mongoose';
-import { IUser } from 'src/users/users.interface';
+import { IUser } from '../users/users.interface';
 import { CreateSubscriberDto } from './dto/create-subscriber.dto';
 import { UpdateSubscriberDto } from './dto/update-subscriber.dto';
 import { SubscriberDocument } from './schemas/subscriber.schema';

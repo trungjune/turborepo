@@ -24,5 +24,20 @@
         "OPTIONS"
       ]
     }
-  ]
+  ],
+  "env": {
+    "PORT": "8000",
+    "MONGODB_URI": "mongodb+srv://trungjune:Hoangtrung96@cluster0.v0pwbmn.mongodb.net/trungjune",
+    "JWT_ACCESS_TOKEN_SECRET": "AHSFFNBHGKDJERJ",
+    "JWT_ACCESS_EXPIRE": "1000m",
+    "JWT_REFRESH_TOKEN_SECRET": "DSHHDSKJHSDKSJDK",
+    "JWT_REFRESH_EXPIRE": "1d",
+    "SHOULD_INIT": "true",
+    "INIT_PASSWORD": "123456",
+    "EMAIL_HOST": "smtp.gmail.com",
+    "EMAIL_AUTH_USER": "trinhhoangtrung194@gmail.com",
+    "EMAIL_AUTH_PASSWORD": "tirb asos grrg hrme",
+    "EMAIL_PREVIEW": "true",
+    "VITE_BACKEND_URL": ""
+  }
 }

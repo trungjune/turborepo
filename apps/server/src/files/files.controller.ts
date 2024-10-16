@@ -12,8 +12,8 @@ import {
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { ApiTags } from '@nestjs/swagger';
-import { HttpExceptionFilter } from 'src/core/http-exeption.filter';
-import { ResponseMessage } from 'src/decorator/customize';
+import { HttpExceptionFilter } from '../core/http-exeption.filter';
+import { ResponseMessage } from '../decorator/customize';
 import { UpdateFileDto } from './dto/update-file.dto';
 import { FilesService } from './files.service';
 @ApiTags('files')

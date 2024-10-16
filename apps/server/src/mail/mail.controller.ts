@@ -4,12 +4,12 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Cron } from '@nestjs/schedule';
 import { ApiTags } from '@nestjs/swagger';
 import { SoftDeleteModel } from 'soft-delete-plugin-mongoose';
-import { Public, ResponseMessage } from 'src/decorator/customize';
-import { Job, JobDocument } from 'src/jobs/schemas/job.schema';
+import { Public, ResponseMessage } from '../decorator/customize';
+import { Job, JobDocument } from '../jobs/schemas/job.schema';
 import {
   Subscriber,
   SubscriberDocument,
-} from 'src/subscribers/schemas/subscriber.schema';
+} from '../subscribers/schemas/subscriber.schema';
 import { MailService } from './mail.service';
 @ApiTags('mail')
 @Controller('mail')

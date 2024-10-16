@@ -5,8 +5,8 @@ import { ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { join } from 'path';
 import { Subscriber } from 'rxjs';
-import { Job, JobSchema } from 'src/jobs/schemas/job.schema';
-import { SubscriberSchema } from 'src/subscribers/schemas/subscriber.schema';
+import { Job, JobSchema } from '../jobs/schemas/job.schema';
+import { SubscriberSchema } from '../subscribers/schemas/subscriber.schema';
 import { MailController } from './mail.controller';
 import { MailService } from './mail.service';
 

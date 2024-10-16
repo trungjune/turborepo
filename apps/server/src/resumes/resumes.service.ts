@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import aqp from 'api-query-params';
 import mongoose from 'mongoose';
 import { SoftDeleteModel } from 'soft-delete-plugin-mongoose';
-import { IUser } from 'src/users/users.interface';
+import { IUser } from '../users/users.interface';
 import { CreateUserCvDto } from './dto/create-resume.dto';
 import { Resume, ResumeDocument } from './schemas/resume.schema';
 

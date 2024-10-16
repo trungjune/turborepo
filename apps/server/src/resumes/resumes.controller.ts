@@ -9,8 +9,8 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { ResponseMessage, UserDecor } from 'src/decorator/customize';
-import { IUser } from 'src/users/users.interface';
+import { ResponseMessage, UserDecor } from '../decorator/customize';
+import { IUser } from '../users/users.interface';
 import { CreateUserCvDto } from './dto/create-resume.dto';
 import { ResumesService } from './resumes.service';
 @ApiTags('resumes')
