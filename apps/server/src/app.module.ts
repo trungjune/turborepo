@@ -22,21 +22,9 @@ import { UsersModule } from './users/users.module';
 // import { ChatsModule } from './chat/chats.module';
 // import { MessagesModule } from './message/messages.module';
 // import { NotificationModule } from './notification/notification.module';
-import { ServeStaticModule } from '@nestjs/serve-static';
-import { join } from 'path';
 import { HealthModule } from './health/health.module';
 @Module({
   imports: [
-    ServeStaticModule.forRoot(
-      {
-        rootPath: join(__dirname, '..', 'public'),
-        serveRoot: '/public/',
-      },
-      {
-        rootPath: join(__dirname, '../..', 'client', 'dist'),
-        exclude: ['/api*'],
-      },
-    ),
     ConfigModule.forRoot({
       isGlobal: true,
     }),

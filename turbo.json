@@ -2,25 +2,22 @@
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
   "tasks": {
-    "dev": {
-      "cache": false,
-      "env": [
-        ".env.development.local",
-        ".env.development",
-        ".env.local",
-        ".env"
-      ]
-    },
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
       "outputs": [
-        "dist/**"
+        "dist/**",
+        ".next/**"
       ],
       "env": [
         ".env.production.local",
         ".env.production",
+        ".env.local",
+        ".env"
+      ]
+    },
+    "dev": {
+      "env": [
+        ".env.development.local",
+        ".env.development",
         ".env.local",
         ".env"
       ]
